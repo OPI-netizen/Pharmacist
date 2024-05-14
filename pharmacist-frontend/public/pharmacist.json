@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "username": "pharmacist1",
+        "email": "pharmacist1@example.com",
+        "password": "hashed_password_1"
+    },
+    {
+        "id": 2,
+        "username": "pharmacist2",
+        "email": "pharmacist2@example.com",
+        "password": "hashed_password_2"
+    },
+    {
+        "id": 3,
+        "username": "pharmacist3",
+        "email": "pharmacist3@example.com",
+        "password": "hashed_password_3"
+    }
+]

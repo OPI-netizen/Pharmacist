@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "username": "pharmacist1",
+        "email": "pharmacist1@example.com",
+        "name": "John Doe",
+        "address": "123 Main Street, City, Country",
+        "phone": "123-456-7890"
+    },
+    {
+        "id": 2,
+        "username": "pharmacist2",
+        "email": "pharmacist2@example.com",
+        "name": "Jane Smith",
+        "address": "456 Elm Street, Town, Country",
+        "phone": "987-654-3210"
+    },
+    {
+        "id": 3,
+        "username": "pharmacist3",
+        "email": "pharmacist3@example.com",
+        "name": "Alice Johnson",
+        "address": "789 Oak Street, Village, Country",
+        "phone": "555-123-4567"
+    }
+]
