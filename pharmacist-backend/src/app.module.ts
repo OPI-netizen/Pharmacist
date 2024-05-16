@@ -13,7 +13,7 @@ import { UserModule } from './user/user.module';
       host: 'localhost', 
       port: 5432, //5432 
       username: 'postgres',
-      password: 'root', //root 
+      password: 'admin', //root 
       database: 'Tele_Pharmacist', 
       autoLoadEntities: true,
       synchronize: true,

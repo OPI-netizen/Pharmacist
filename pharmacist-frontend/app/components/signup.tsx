@@ -55,35 +55,64 @@ export default function Signup() {
 
   const validateForm = (formData: FormData): Partial<FormData> => {
     const errors: Partial<FormData> = {};
-
+  
     if (!formData.name) {
       errors.name = 'Name is required';
     }
-
+  
     if (!formData.email) {
       errors.email = 'Email is required';
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       errors.email = 'Invalid email address';
     }
-
+  
     if (!formData.password) {
       errors.password = 'Password is required';
+    } else {
+      if (formData.password.length < 8) {
+        errors.password = 'Password must be at least 8 characters';
+      }
+  
+      if (!/[A-Z]/.test(formData.password)) {
+        errors.password = errors.password
+          ? errors.password + ', include at least one uppercase letter'
+          : 'Include at least one uppercase letter';
+      }
+  
+      if (!/[a-z]/.test(formData.password)) {
+        errors.password = errors.password
+          ? errors.password + ', include at least one lowercase letter'
+          : 'Include at least one lowercase letter';
+      }
+  
+      if (!/[0-9]/.test(formData.password)) {
+        errors.password = errors.password
+          ? errors.password + ', include at least one number'
+          : 'Include at least one number';
+      }
+  
+      if (!/[^A-Za-z0-9]/.test(formData.password)) {
+        errors.password = errors.password
+          ? errors.password + ', include at least one special character'
+          : 'Include at least one special character';
+      }
     }
-
+  
     if (!formData.years_of_experience) {
       errors.years_of_experience = 'Years of experience is required';
     }
-
+  
     if (!formData.specialization) {
       errors.specialization = 'Specialization is required';
     }
-
+  
     if (!formData.workplace) {
       errors.workplace = 'Workplace is required';
     }
-
+  
     return errors;
   };
+  
 
   return (
     <div className="max-w-md mx-auto mt-8">

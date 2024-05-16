@@ -3,7 +3,7 @@
 import React from 'react';
 import Card from './components/card';
 import SearchBar from './components/search'; // Correct the import path
-import { SessionCheck } from './components/signin/sessionCheck';
+// import { SessionCheck } from './components/signin/sessionCheck';
 
 export default function Home() {
   const medications = [
@@ -11,7 +11,7 @@ export default function Home() {
       name: 'Amoxicillin',
       description: 'Used to treat many different types of infection caused by bacteria, such as tonsillitis, bronchitis, pneumonia, and infections of the ear, nose, throat, skin, or urinary tract.',
       price: 23.50,
-      imageUrl: '/Amoxicillin-500mg.jpg'
+      imageUrl: '/public/Amoxicillin.jpeg'
     },
     {
       name: 'Ibuprofen',
@@ -29,8 +29,7 @@ export default function Home() {
 
   return (
     <>
-      {/* <h1 className="bg-green-800 text-white text-center py-4">Home Page</h1> */}
-      {/* <SessionCheck /> */}
+      
       <SearchBar />
       <div className="flex flex-wrap justify-center">
         {medications.map(med => (

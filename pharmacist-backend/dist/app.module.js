@@ -23,7 +23,7 @@ exports.AppModule = AppModule = __decorate([
                 host: 'localhost',
                 port: 5432,
                 username: 'postgres',
-                password: 'root',
+                password: 'admin',
                 database: 'Tele_Pharmacist',
                 autoLoadEntities: true,
                 synchronize: true,

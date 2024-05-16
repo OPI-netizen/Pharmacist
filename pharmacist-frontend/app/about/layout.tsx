@@ -5,7 +5,7 @@ export default function AboutLayout({
   }) {
     return (
       <section>
-      <h1>About Layout</h1>
+      <h1></h1>
    
         {children}
       </section>
